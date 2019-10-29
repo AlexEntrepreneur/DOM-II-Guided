@@ -4,7 +4,12 @@
 
 
 
-//====== Event Propagation ======//
+//====== Current Target vs Target ======//
+// target is the element directly interacted with (can change)
+// currentTarget is the element that is listening for the event (doesn’t change)
+
+
+
 
 
 

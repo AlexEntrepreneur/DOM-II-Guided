@@ -19,6 +19,7 @@ firstNameInput.addEventListener('keydown', function (event) {
   console.log(`Input detected keypress: `, event.key);
 });
 
+
 //====== Current Target vs Target ======//
 const siteContainer = document.querySelector('.container');
 
@@ -31,6 +32,7 @@ siteContainer.addEventListener('click', function (event) {
   // event.target.style.visibility = 'hidden';
 });
  
+
 //====== Event Propagation ======//
 const workList = document.querySelector('.work-list');
 
@@ -56,9 +58,6 @@ form.addEventListener('submit', function (event) {
   console.log('First Name: ', event.target[0].value);
   console.log('Last Name: ', event.target[1].value);
 });
-
-
-
 
 
 //====== More Event Practice! ======//

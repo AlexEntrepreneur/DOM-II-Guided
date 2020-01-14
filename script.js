@@ -1,5 +1,11 @@
 //====== Event Listeners ======//
+document.addEventListener('click', event => {
+  console.log('💥 Detected a click! 💥', event);
+});
 
+document.addEventListener('mousemove', event => {
+  console.log('💥 Mouse Moved! 💥', `position: [${event.clientX}, ${event.clientY}]`);
+});
 
 
 

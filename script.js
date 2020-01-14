@@ -56,10 +56,24 @@ const form = document.querySelector('form');
 form.addEventListener('submit', event => {
   console.log('💥 Form Detected Submit! 💥');
 
-
   // Stops the original behaviour of HTML elements
   // In this scenario, it stops the form from refreshing the page on submit
   event.preventDefault();
+
+  console.dir(`First Name: ${event.target[0].value}`);
+  console.dir(`Last Name: ${event.target[1].value}`);
+});
+
+// Amin
+const home = document.querySelector('nav a');
+
+home.addEventListener('click', e => {
+  console.log('Do not go anywhere!');
+  event.preventDefault();
+  event.stopPropagation();
+
+  // Redirecting the link to a different URL
+  // window.location = "https://google.com"
 });
 
 
